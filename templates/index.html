@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Downloader by meyan adhikari for hritesh raiiii</h1>
+        <form action="/" method="POST">
+            <label for="url">Enter YouTube Video URL:</label>
+            <input type="text" id="url" name="url" placeholder="e.g., https://www.youtube.com/watch?v=example" required>
+            <button type="submit">Download Video</button>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
